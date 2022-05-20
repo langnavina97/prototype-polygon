@@ -144,7 +144,7 @@ class App extends Component {
       });
 
       if (resp.status) {
-        swal("Investment successfull!", `You invested ${v} BNB into the portfolio.`, "success");
+        swal("Investment successfull!", `You invested ${v} MATIC into the portfolio.`, "success");
         //window.location.reload();
       } else {
         swal("Investment failed!");
@@ -271,7 +271,7 @@ class App extends Component {
       });
 
       if (resp.status) {
-        swal("Investment successfull!", `You invested ${v} BNB into the portfolio.`, "success");
+        swal("Investment successfull!", `You invested ${v} MATIC into the portfolio.`, "success");
         //window.location.reload();
       } else {
         swal("Investment failed!");
@@ -309,7 +309,7 @@ class App extends Component {
       });
 
       if (resp.status) {
-        swal("Investment successfull!", `You invested ${v} BNB into the portfolio.`, "success");
+        swal("Investment successfull!", `You invested ${v} MATIC into the portfolio.`, "success");
         //window.location.reload();
       } else {
         swal("Investment failed!");
@@ -453,7 +453,7 @@ class App extends Component {
                   <Card.Description>
 
                     <Form onSubmit={this.investDeFiMainnet}>
-                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="BNB amount to create" name="defiToMintMainnet" onChange={this.handleInputChange}></Input>
+                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="MATIC amount to create" name="defiToMintMainnet" onChange={this.handleInputChange}></Input>
                       <Button color="green" type="submit" style={{ margin: "20px", width: "150px" }}>Create</Button>
                     </Form>
 
@@ -480,7 +480,7 @@ class App extends Component {
                   <Card.Description>
 
                     <Form onSubmit={this.investNFTMainnet}>
-                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="BNB amount to create" name="nftToMintMainnet" onChange={this.handleInputChange}></Input>
+                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="MATIC amount to create" name="nftToMintMainnet" onChange={this.handleInputChange}></Input>
                       <Button color="green" type="submit" style={{ margin: "20px", width: "150px" }}>Create</Button>
                     </Form>
 
@@ -512,6 +512,8 @@ class App extends Component {
         {button}
         
         {mainnet}
+
+        <Button onClick={this.approveNFTTokens} color="green" style={{ margin: "20px", width: "150px" }}>approve nft</Button>
 
       </div >
     );
