@@ -458,7 +458,7 @@ class App extends Component {
                     </Form>
 
                     <Form onSubmit={this.withdrawDeFiMainnet}>
-                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="TOP15 amount to redeem" name="withdrawValueDefi" onChange={this.handleInputChange}></Input>
+                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="IDX amount to redeem" name="withdrawValueDefi" onChange={this.handleInputChange}></Input>
                       <Button color="green" style={{ margin: "20px", width: "150px" }}>Redeem</Button>
                     </Form>
 
@@ -485,7 +485,7 @@ class App extends Component {
                     </Form>
 
                     <Form onSubmit={this.withdrawNFTMainnet}>
-                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="TOP15 amount to redeem" name="withdrawValueNFT" onChange={this.handleInputChange}></Input>
+                      <Input style={{ width: "300px", padding: 3 }} required type="text" placeholder="IDX amount to redeem" name="withdrawValueNFT" onChange={this.handleInputChange}></Input>
                       <Button color="green" style={{ margin: "20px", width: "150px" }}>Redeem</Button>
                     </Form>
 
