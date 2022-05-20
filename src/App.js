@@ -513,9 +513,6 @@ class App extends Component {
         
         {mainnet}
 
-        <Button onClick={this.approveNFTTokens} color="green" style={{ margin: "20px", width: "150px" }}>approve nft</Button>
-        <Button onClick={this.approveDeFiTokens} color="green" style={{ margin: "20px", width: "150px" }}>approve DEFI</Button>
-
       </div >
     );
   }
